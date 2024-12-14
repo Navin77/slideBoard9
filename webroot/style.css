@@ -1,0 +1,462 @@
+:root {
+  --primary-color: #6b7280;
+  --background-color: #f3f4f6;
+  --text-color: #374151;
+  --accent-color: #60a5fa;
+  --border-radius: 6px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #4f9bba; */
+  background: repeating-radial-gradient(#fff, #00b2ff 50px);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.3;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 5px
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+
+input:focus:invalid {
+  box-shadow: none;
+  border: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  box-shadow: var(--shadow);
+  margin: 0;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#b1,
+#bd1,
+#bu1 {
+  background-color: red;
+}
+
+#b2,
+#bd2,
+#bu2 {
+  background-color: green;
+}
+
+#b3,
+#bd3,
+#bu3 {
+  background-color: #00b;
+}
+
+#b4,
+#bd4,
+#bu4 {
+  background-color: #a400a4;
+}
+
+#b5,
+#bd5,
+#bu5 {
+  background-color: #200000;
+}
+
+#b6,
+#bd6,
+#bu6 {
+  background-color: rgb(174, 6, 34);
+}
+
+#b7,
+#bd7,
+#bu7 {
+  background-color: #0190ca;
+}
+
+#b8,
+#bd8,
+#bu8 {
+  background-color: #9f6b0a;
+}
+
+#b9,
+#bd9,
+#bu9 {
+  background-color: white;
+}
+
+.c1 {
+  grid-column: 1;
+}
+
+.c2 {
+  grid-column: 2;
+}
+
+.c3 {
+  grid-column: 3;
+}
+
+.r1 {
+  grid-row: 1;
+}
+
+.r2 {
+  grid-row: 2;
+}
+
+.r3 {
+  grid-row: 3;
+}
+
+.hide {
+  display: none;
+}
+
+#authrPage1 {
+  display: flex;
+  justify-content: space-around;
+  width: 320px;
+  padding: 30px 10px;
+  background-color: #d0eefa;
+}
+
+#page2 {
+  position: relative;
+}
+
+#gPage2 {
+  display: block;
+  width: 320px;
+  padding: 30px 10px;
+  background-color: #d0eefa;
+}
+
+#gPage2>h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black
+}
+
+#gBoard {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  box-shadow: 0.8px 0.8px 5px black;
+  margin-bottom: 15px;
+}
+
+#gBoard>* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+#gBoardDummy {
+  width: 90px;
+  height: 90px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  box-shadow: 0.8px 0.8px 5px black;
+  margin-bottom: 15px;
+}
+
+#gBoardDummy>* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: white;
+}
+
+.page2GameCont {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px;
+}
+
+.page2Part2 {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#gConfigs {
+  width: 150px;
+}
+
+#minuteConstraint,
+#secondsConstraint,
+#mConsInput {
+  font-size: 1rem;
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.gStepsHead {
+  padding: 5px 0px;
+  text-align: center;
+  background-color: skyblue;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.moveMadeCont {
+  text-align: center;
+}
+
+.moveMadeCont p,
+.minimumLimit {
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+}
+
+.limitHeader {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px
+}
+
+#makePuzzForm {
+  text-align: center;
+}
+
+.timeConstraintContainer,
+.movesConstraintContainer {
+  margin-bottom: 10px;
+}
+
+#movesConstraint {
+  margin: 0;
+}
+
+#gameStartBtn {
+  margin-top: 10px;
+}
+
+#gBoardCont {
+  position: relative;
+}
+
+#wonBox {
+  z-index: 2;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #0000005e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wonTxt {
+  color: yellow;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+#leaderBoard {
+  position: absolute;
+  z-index: 4;
+  background: #000000d6;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#leaderBoard h2 {
+  color: white
+}
+
+.closeBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn {
+  padding: 0;
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 7px;
+}
+
+.closeBtn:hover {
+  transform: translateY(-1px);
+}
+
+.closeBtn:active {
+  transform: translateY(0);
+}
+
+.leadersCont {
+  margin: 10px 10px 5px 10px
+}
+
+.pointsTbl,
+.usrPointsTbl {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.pointsCol {
+  width: 46px
+}
+
+.rank {
+  width: 10px
+}
+
+.pointsTbl {
+  margin-top: 20px;
+}
+
+.usrPointsTbl tr {
+  border-bottom: 1px solid #7cfdf1;
+  background-color: #517071;
+}
+
+td {
+  padding: 8px 10px;
+}
+
+.pointsTbl tr:nth-child(even) {
+  background-color: #517071;
+}
+
+.pointsTbl tr:nth-child(odd) {
+  background-color: #315858;
+}
+
+.notAllowed {
+  cursor: not-allowed;
+}
+
+.lBoardCont {
+display: flex;
+justify-content: center;
+}
+
+.gameLostMsg {
+  margin-bottom: 10px;
+}
+
+.errTxt {
+    color: red;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin: 5px 0px;
+}
+
+.errInput {
+  border: 1.5px solid red;
+}
+
+#AppLoadPage>div {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#otherPage1 h1 {
+  color: black;
+  text-align: center;
+}
+
+#loaderr {
+  border: 30px solid #f3f3f3;
+  border-top: 30px solid #3498db;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

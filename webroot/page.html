@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="UTF-8" />
+  <title>slidePuzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="AppLoadPage" class="">
+    <div>
+    <div id="loaderr"></div>
+    </div>
+  </div>
+  <div id="authorPage1" class="hide">
+    <div id="authrPage1">
+      <div>
+        <p class="gStepsHead">1. Rearrange</p>
+        <div id="gBoard">
+          <div id="b1" class="r1 c1">1</div>
+          <div id="b2" class="r1 c2">2</div>
+          <div id="b3" class="r1 c3">3</div>
+          <div id="b4" class="r2 c1">4</div>
+          <div id="b5" class="r2 c2">5</div>
+          <div id="b6" class="r2 c3">6</div>
+          <div id="b7" class="r3 c1">7</div>
+          <div id="b8" class="r3 c2">8</div>
+          <div id="b9" class="r3 c3"></div>
+        </div>
+        <div class="moveMadeCont">
+          <p>moves made: <span class="authMoves">0</span></p>
+          <p id="pleaseErr" class="errTxt hide">Rearrange please!!!</p>
+          <button class="resetMoves">reset</button>
+          <button class="puzzNxtBtn">next</button>
+        </div>
+      </div>
+      <div id="gConfigs" class="hide">
+        <p class="gStepsHead">2. Set Limits</p>
+    
+        <div id="makePuzzForm">
+          <section class="timeConstraintContainer">
+            <p class="limitHeader">Limit Time</p>
+            <p class="minimumLimit">minimum 10 sec</p>
+            <p id="minErrMsg" class="errTxt"></p>
+            <label for="minuteConstraint">minutes:</label>
+            <input id="minuteConstraint" value="0" placeholder="0" class="errInput">
+            <p id="secErrMsg" class="errTxt"></p>
+            <label for="secondsConstraint">seconds:</label>
+            <input id="secondsConstraint" placeholder="10">
+          </section>
+          <section class="movesConstraintContainer">
+            <div class="limitHeader">
+              <input type="checkbox" id="movesConstraint">
+              <label for="movesConstraint">Limit Moves</label>
+            </div>
+            <div id="movesInputCont" class="hide">
+              <p class="minimumLimit">minimum <span class="authMoves">0</span> moves</p>
+              <p id="movErrMsg" class="errTxt"></p>
+              <label for="">moves:</label>
+              <input id="mConsInput" placeholder="0">
+            </div>
+          </section>
+          <button id="createPuzzBtn">create puzzle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="otherPage1" class="hide">
+    <h1>GAME</h1>
+    <h1>Coming Soon...</h1>
+  </div>
+  <div id="page2" class="hide">
+    <div id="leaderBoard" class="hide">
+      <div class="closeBox">
+        <button class="closeBtn">X</button>
+      </div>
+      <p class="gameLostMsg"></p>
+      <h2>LeaderBoard</h2>
+      <div class="leadersCont">
+      </div>
+    </div>
+    <div id="gPage2">
+    <h2>solve in <span id="gTimeLimitt">n</span> <span class="isMoveLimited hide">with <span id="gMoveLimitt">n</span> moves</span></h2>
+    <div class="page2GameCont">
+      <div>
+        <p class="gStepsHead">1. Make It</p>
+        <div id="gBoardCont">
+          <div id="wonDisp" class="hide">
+            <div id="wonBox">
+              <p class="wonTxt">WON</p>
+            </div>
+          </div>
+          <div id="gBoard">
+            <div id="bu1" class="r1 c1">1</div>
+            <div id="bu2" class="r1 c2">2</div>
+            <div id="bu3" class="r1 c3">3</div>
+            <div id="bu4" class="r2 c1">4</div>
+            <div id="bu5" class="r2 c2">5</div>
+            <div id="bu6" class="r2 c3">6</div>
+            <div id="bu7" class="r3 c1">7</div>
+            <div id="bu8" class="r3 c2">8</div>
+            <div id="bu9" class="r3 c3"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="gStepsHead">2. Like This</p>
+        <div class="page2Part2">
+          <div id="gBoardDummy">
+            <div id="bd1" class="r1 c1">1</div>
+            <div id="bd2" class="r1 c2">2</div>
+            <div id="bd3" class="r1 c3">3</div>
+            <div id="bd4" class="r2 c1">4</div>
+            <div id="bd5" class="r2 c2">5</div>
+            <div id="bd6" class="r2 c3">6</div>
+            <div id="bd7" class="r3 c1">7</div>
+            <div id="bd8" class="r3 c2">8</div>
+            <div id="bd9" class="r3 c3"></div>
+          </div>
+          <div>
+            <p class="isMoveLimited hide">moves: <span id="gMoveLimit">5</span></p>
+            <p>duration: <span id="gTimeLimit">1:00</span></p>
+            <button id="gameStartBtn">start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lBoardCont">
+    <button class="leaderBoardBtn">leaderBoard</button>
+    </div>
+  </div>
+  </div>
+  <script type="application/javascript" src="script.js"></script>
+</body>
+
+</html>
