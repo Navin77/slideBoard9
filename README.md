@@ -1,6 +1,6 @@
 # SlideBoard9
 
-[![demo](resources/Screenshot.png)](resources/Screenshot.png)
+<img src="resources/Screenshot.png" alt="Alt Text" width="200" height="209">
 
 SlideBoard9 is a puzzle game where you could move numbered squares to solve
 with limited moves and time.
