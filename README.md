@@ -1,6 +1,6 @@
 # SlideBoard9
 
-[![demo](resources/screenshot.png)](resources/screenshot.png)
+[![demo](resources/Screenshot.png)](resources/Screenshot.png)
 
 SlideBoard9 is a puzzle game where you could move numbered squares to solve
 with limited moves and time.
@@ -11,3 +11,4 @@ with limited moves and time.
 - src/createPost.tsx: devvit code to add menu items
 - src/App.tsx: contains App component & webviews...
 - src/webviewMsg.tsx: contains declaration of type which webview sends
+- webroot: it contains the webView codes
